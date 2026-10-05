@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.background{
+    position: fixed;
+    overflow: hidden;
+    inset: 0;
+    z-index: -1;
+}
+.background img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    filter: blur(3px);
+}
+.background::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.65);
+    inset: 0;
+    position: absolute;
+}
+.netFlixLogo img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.movie-card{
+    height: 400px;
+    background-color: black;
+    color: white;
+}
+.movie-card .card-body{
+    height: 250px; 
+    padding: 5px;
+    overflow: hidden;
+    
+}
+.movie-card .card-header{
+    height: 75px; 
+    padding: 10px;
+    
+}
+.movie-card .card-footer{
+    height: 75px; 
+    padding: 18px; 
+    /* background-color: orange; */
+}
+figure img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+}
+figure{
+    overflow-y: hidden;
+    position: relative;
+
+}
+figcaption{
+    position: absolute;
+    color: white;
+    bottom: -250px;
+    opacity: 0;
+    transition: 0.3s linear all;
+    padding: 10px;
+}
+
+.card-body:hover figcaption{
+    bottom: 0;
+    opacity: 1;
+    background-color: rgba(0 , 0, 0, .55);
+}
+#crossMark{
+    position: absolute;
+    font-size: 30px;
+    top: 0px;
+    right: 10px;
+    padding: 10px;
+}
+#formColumn{
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    opacity: 0;
+}
+#uiRating{
+    width: 65%;
+    margin-left: 15px;
+    /* background-color: green; */
+    padding: 3px 6px;
+    border-radius: 10px;
+}
+#movie-card-header .col-8 h4{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#spinner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#updatedAtheading{
+    font-size: 12px;
+}
+.bg_red{
+    background-color: red;
+}
+.bg_orange{
+    background-color: orange;
+}
+.bg_green{
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
